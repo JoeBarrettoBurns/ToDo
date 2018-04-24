@@ -1,0 +1,76 @@
+//
+//  TasksViewController.swift
+//  ToDo
+//
+//  Created by Joe B-B on 2018-03-30.
+//  Copyright © 2018 Joe B-B. All rights reserved.
+//
+
+import UIKit
+
+class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var tableView: UITableView!
+    
+    // tasks = to array of 3 different task objects (task1, task2, task3)
+    var tasks : [Task] = []
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tasks = makeTasks()
+        
+        tableView.dataSource =  self
+        tableView.delegate = self
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tasks.count
+        
+    }
+        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell =  UITableViewCell()
+        let task = tasks[indexPath.row]
+        if task.important {
+              cell.textLabel?.text = " ❗️ \(task.name)"
+            
+        } else{
+              cell.textLabel?.text = task.name
+        }
+        return cell
+        }
+    
+    func makeTasks() -> [Task] {
+        let task1 = Task()
+        task1.name = "Walk the Dog"
+        task1.important = false
+        
+        let task2 = Task()
+        task2.name = "Buy Cheese"
+        task2.important = true
+        
+        let task3 = Task()
+        task3.name = "Take out Garbage"
+        task3.important = true
+        
+        return [task1, task2, task3]
+    }
+
+    @IBAction func plusTapped(_ sender: AnyObject) {
+        performSegue(withIdentifier: "addSegue", sender: nil)
+    }
+    // referencing from create task to task view controller
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as!
+            CreateTaskViewController
+        nextVC.previousVC = self
+        
+    }
+    
+}
+
+
+
