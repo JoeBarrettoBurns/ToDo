@@ -13,6 +13,8 @@ class CreateTaskViewController: UIViewController {
     @IBOutlet weak var importantButton: UISwitch!
     @IBOutlet weak var taskNameTextField: UITextField!
     
+    
+    
    var previousVC = TasksViewController()
     
     

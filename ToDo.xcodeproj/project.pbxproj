@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB99B1FB2092B8020040F6BB /* CompleteTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99B1FA2092B8020040F6BB /* CompleteTaskViewController.swift */; };
 		ABC2F6AE208EC16300B48332 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2F6AD208EC16300B48332 /* CreateTaskViewController.swift */; };
 		ABDA12C7206EC95000D26614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDA12C6206EC95000D26614 /* AppDelegate.swift */; };
 		ABDA12C9206EC95000D26614 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDA12C8206EC95000D26614 /* TasksViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB99B1FA2092B8020040F6BB /* CompleteTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTaskViewController.swift; sourceTree = "<group>"; };
 		ABC2F6AD208EC16300B48332 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		ABDA12C3206EC95000D26614 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDA12C6206EC95000D26614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				ABDA12C6206EC95000D26614 /* AppDelegate.swift */,
+				AB99B1FA2092B8020040F6BB /* CompleteTaskViewController.swift */,
 				ABC2F6AD208EC16300B48332 /* CreateTaskViewController.swift */,
 				ABDA12C8206EC95000D26614 /* TasksViewController.swift */,
 				ABDA12DB2077075E00D26614 /* Task.swift */,
@@ -147,6 +150,7 @@
 			files = (
 				ABDA12DC2077075E00D26614 /* Task.swift in Sources */,
 				ABDA12C9206EC95000D26614 /* TasksViewController.swift in Sources */,
+				AB99B1FB2092B8020040F6BB /* CompleteTaskViewController.swift in Sources */,
 				ABDA12CF206EC95000D26614 /* ToDo.xcdatamodeld in Sources */,
 				ABDA12C7206EC95000D26614 /* AppDelegate.swift in Sources */,
 				ABC2F6AE208EC16300B48332 /* CreateTaskViewController.swift in Sources */,
